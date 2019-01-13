@@ -1,0 +1,17 @@
+git how to merge your branch (mybranch) with master 
+and continue working on it 
+
+Here is the process you are looking for:
+
+    git checkout master			// checkout master
+    git merge mybranch			// merge mybranch to master
+    git push origin master		// 
+    git branch -d mybranch		// delete mybranch
+    git checkout master			// checkout master
+    git checkout -b mybranch	// create a new mybranch from master and checkout 
+	
+    continue your commits on the branch Farmcrops...
+
+Branches are just pointers, it's very easy to create/delete a branch and if your branch Farmcrops isn't pushed on remote repository, there is absolutely no dependency with it. You can delete it after the merge and recreate it from the master.
+
+Hope this will help you.
